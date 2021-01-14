@@ -1,19 +1,24 @@
 ---
-title: "AWS Modernization Workshop"
+title: "New Relic Serverless Workshop"
 chapter: true
 weight: 1
 ---
 
-# AWS Modernization Workshop
+# New Relic Serverless Workshop
 
-### Welcome
+![Monitoring Diagram](/images/new-relic-aws.jpg)
 
-In this workshop you will learn why DevOps is a pattern for modernization and how to use patterns to release features and functionality at a faster pace.
+### Welcome!
+
+In this workshop you will learn how to connect your AWS account to New Relic and how to instrument your AWS Lambda functions for better observability.
 
 ### Learning Objectives
-- Deploy Cloud9 as an IDE for completing workshop exercises.
-- How DevOps patterns help to release features and functionality faster.
-- Best practices for implementing 2 pizza team pipelines.
+- Using AWS CloudShell to:
+  * Install the New Relic CLI tool
+  * Connect an AWS account to New Relic
+  * Instrument Lambda functions using the New Relic CLI tool
+- Obtain an understanding of how instrumenting your Lambda functions provides better end to end observability of your AWS environment
+
 
 {{% notice warning %}}
 <p style='text-align: left;'>
