@@ -13,7 +13,7 @@ weight: 1
 In this workshop you will learn how to connect your AWS account to New Relic and how to instrument your AWS Lambda functions for better observability.
 
 ### Learning Objectives
-- Using AWS CloudShell to:
+- Use AWS CloudShell to:
   * Install the New Relic CLI tool
   * Connect an AWS account to New Relic
   * Instrument Lambda functions using the New Relic CLI tool
