@@ -52,7 +52,7 @@ All future layers versions will include the Lambda extension by default.
 To list your Lambda functions and verify that they are now instrumented, you can run the following command:
 
 ```bash
-newrelic-lambda layers list
+newrelic-lambda functions list
 ```
 
 Congratulations!  You have successfully instrumented the Lambda functions for your AWS Bookstore application!
