@@ -8,43 +8,24 @@ weight = 40
 
 Now that we have linked your AWS and New Relic accounts, let's install the New Relic Lambda layer for each of the AWS Lambda functions we wish to monitor in our AWS Bookstore application.
 
-Copy the commands listed below, one at a time, into CloudShell to instrument your Lambda functions (You will need to replace YOUR_NR_ACCOUNT_ID with your actual New Relic account ID that you stored earlier in a text file):
+First, let's export an environment variable containing our New Relic account id to make it easier to instrument each of our Lambda functions:
 
 ```bash
-newrelic-lambda layers install --nr-account-id YOUR_NR_ACCOUNT_ID --function mybookstore-ListOrdersInCart --upgrade
+export NR_ACCOUNT_ID=YOUR_ACTUAL_NR_ACCOUNT_ID_GOES_HERE
+``` 
 
-```
-
-```bash
-newrelic-lambda layers install --nr-account-id YOUR_NR_ACCOUNT_ID --function mybookstore-AddToCart --upgrade
-```
+Now, copy the commands listed below into CloudShell to instrument your Lambda functions:
 
 ```bash
-newrelic-lambda layers install --nr-account-id YOUR_NR_ACCOUNT_ID --function mybookstore-ListOrders --upgrade
-```
-
-```bash
-newrelic-lambda layers install --nr-account-id YOUR_NR_ACCOUNT_ID --function mybookstore-GetCartItem --upgrade
-```
-
-```bash
-newrelic-lambda layers install --nr-account-id YOUR_NR_ACCOUNT_ID --function mybookstore-Checkout --upgrade
-```
-
-```bash
-newrelic-lambda layers install --nr-account-id YOUR_NR_ACCOUNT_ID --function mybookstore-UpdateCart --upgrade
-```
-
-```bash
-newrelic-lambda layers install --nr-account-id YOUR_NR_ACCOUNT_ID --function mybookstore-GetBook --upgrade
-```
-
-```bash
-newrelic-lambda layers install --nr-account-id YOUR_NR_ACCOUNT_ID --function mybookstore-RemoveFromCart --upgrade
-```
-
-```bash
-newrelic-lambda layers install --nr-account-id YOUR_NR_ACCOUNT_ID --function mybookstore-ListBooks --upgrade
+newrelic-lambda layers install --nr-account-id $NR_ACCOUNT_ID --function mybookstore-ListOrdersInCart --upgrade
+newrelic-lambda layers install --nr-account-id $NR_ACCOUNT_ID --function mybookstore-AddToCart --upgrade
+newrelic-lambda layers install --nr-account-id $NR_ACCOUNT_ID --function mybookstore-ListOrders --upgrade
+newrelic-lambda layers install --nr-account-id $NR_ACCOUNT_ID --function mybookstore-GetCartItem --upgrade
+newrelic-lambda layers install --nr-account-id $NR_ACCOUNT_ID --function mybookstore-Checkout --upgrade
+newrelic-lambda layers install --nr-account-id $NR_ACCOUNT_ID --function mybookstore-UpdateCart --upgrade
+newrelic-lambda layers install --nr-account-id $NR_ACCOUNT_ID --function mybookstore-GetBook --upgrade
+newrelic-lambda layers install --nr-account-id $NR_ACCOUNT_ID --function mybookstore-RemoveFromCart --upgrade
+newrelic-lambda layers install --nr-account-id $NR_ACCOUNT_ID --function mybookstore-ListBooks --upgrade
 ```
 
 All future layers versions will include the Lambda extension by default.
