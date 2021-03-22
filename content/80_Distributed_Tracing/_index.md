@@ -1,13 +1,11 @@
 +++
-title = "Distributed Tracing"
+title = "Logging"
 chapter = true
 weight = 80
 +++
 
 # Digging Deeper
 
-Transaction tracing is effective for analyzing activity in one application. With distributed tracing, you can see the entire journey your requests take as they travel through distributed systems.
+While Transaction tracing is often effective in and of itself for analyzing activity in your application, it doesn't always catch every type of issue your user's can encounter and/or reveal all context needed for root cause analysis.  Sometimes you need to dig deeper.
 
-As requests travel between services, each segment is recorded as a span, which represents time spent in services or resources of those services. All the spans of a request are combined into a single distributed trace to give you a picture of an entire request.
-
-If you are utilizing New Relic Logs, logs in context will also be provided.
+Using New Relic Logs, you can see your logs in context of application execution and quickly determine the root cause of issues your customers are facing.

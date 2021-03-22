@@ -8,7 +8,7 @@ weight = 1
 In a real-world environment, enabling the streaming of Lambda logs can increase both your AWS and New Relic bills.
 {{% /notice %}}
 
-Sometimes the errors page alone may not provide enough information for sufficient or quick analysis.  Combining the power of New Relic Logs in context with New Relic Serverless for AWS Lambda's Distributed Tracing feature allows you to dig deeper into issues.
+Sometimes the errors page alone may not provide enough information for sufficient or quick analysis.  New Relic Logs allows you to dig deeper into issues.
 
 Let's hop back into the AWS Console and stream one of our Lambda function's log groups to New Relic.  First, open up CloudWatch in the AWS Console by searching for it in the search bar at the top of your screen.  Then, click on the **Log groups** link in the navigation menu on the left hand side of your screen located in the *Logs* section:
 

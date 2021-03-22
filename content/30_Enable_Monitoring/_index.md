@@ -40,18 +40,6 @@ When you link your AWS account to New Relic, you're granting permission to New R
  * Your New Relic account ID.
  * Your New Relic personal User key
 
-### Finding your New Relic account ID
-
-You can locate this by visiting your [New Relic One homepage](https://one.newrelic.com/), logging in, clicking on the button at the top right hand corner of the screen, and selecting ***Account settings***:
- 
-![Account Settings](/images/enable_monitoring/account-settings.png)
-
-On the Account settings page you will see your account name and number presented in a dropdown box near the top of the page:
-
-![Account ID](/images/enable_monitoring/account-id.png)
-
-Open your favorite text editor and type in your New Relic account ID so that you can easily copy and paste it later.
-
 ### Create a New Relic User key
 
 Navigate to your [New Relic One homepage](https://one.newrelic.com/) and once again click on the button at the top right hand corner of the screen.  This time, select ***API keys*** from the dropdown dialog:
@@ -62,11 +50,13 @@ On the API keys page, click on the ***Create key*** button located toward the ri
 
 ![Create key](/images/enable_monitoring/create-key.png)
 
+You will notice that your account number is listed in the dropdown box under the ***Account*** heading.  Please open a text file in your favorite text editor and type this in for easy access later on in this workshop.
+
 Create your key by filling out the form on the right hand side of your screen as shown below, ensuring that the **Key type** field is set to **User**, and clicking on the ***Create key*** button:
 
 ![Create key dialog](/images/enable_monitoring/create-key-dialog.png)
 
-Copy your newly created key (as shown below) and paste it in the text file you created earlier to store your New Relic account ID:
+Copy your newly created key (as shown below) and paste it into the text file as well:
 
 ![Copy key](/images/enable_monitoring/copy-key.png)
 

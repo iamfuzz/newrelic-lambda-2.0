@@ -14,7 +14,7 @@ You can then find the CloudFront link to your website by clicking on the **Outpu
 
 ![CloudFront URL](/images/generate_traffic/cloudfront-url.png)
 
-Signup for an account by clicking the **Sign up to explore the demo** button.  Please provide a valid email address as a required confirmation code will be sent. 
+If you haven't done so already, sign up for an account by clicking the **Sign up to explore the demo** button.  Please provide a valid email address as a required confirmation code will be sent. 
 
 Once logged in, Click on the **Add to cart** button under any book(s) listed on the homepage, and complete the checkout process:
 
